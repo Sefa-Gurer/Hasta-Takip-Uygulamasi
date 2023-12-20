@@ -1,0 +1,10 @@
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\bin\Debug\DEnEme.exe.config
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\bin\Debug\DEnEme.exe
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\bin\Debug\DEnEme.pdb
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.Form1.resources
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.exe
+C:\Users\LENOVO\source\repos\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
