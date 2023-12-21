@@ -18,3 +18,4 @@ C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\D
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.exe
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form2.resources

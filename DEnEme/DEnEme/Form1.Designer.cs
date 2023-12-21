@@ -38,8 +38,10 @@ namespace DEnEme
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -72,7 +74,7 @@ namespace DEnEme
             this.kullanici_adi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kullanici_adi.Name = "kullanici_adi";
             this.kullanici_adi.Size = new System.Drawing.Size(163, 22);
-            this.kullanici_adi.TabIndex = 4;
+            this.kullanici_adi.TabIndex = 1;
             // 
             // button1
             // 
@@ -82,7 +84,7 @@ namespace DEnEme
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 40);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Giriş";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -93,7 +95,7 @@ namespace DEnEme
             this.sifre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sifre.Name = "sifre";
             this.sifre.Size = new System.Drawing.Size(163, 22);
-            this.sifre.TabIndex = 7;
+            this.sifre.TabIndex = 2;
             // 
             // label1
             // 
@@ -121,14 +123,14 @@ namespace DEnEme
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.BackColor = System.Drawing.Color.MediumOrchid;
+            this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(12, 133);
+            this.label3.Location = new System.Drawing.Point(10, 110);
             this.label3.MaximumSize = new System.Drawing.Size(300, 300);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(271, 28);
-            this.label3.TabIndex = 10;
+            this.label3.Size = new System.Drawing.Size(289, 90);
+            this.label3.TabIndex = 0;
             this.label3.Text = "YAŞAM EVDE SAĞLIK";
             // 
             // Form1
@@ -148,7 +150,7 @@ namespace DEnEme
             this.Controls.Add(this.pictureBox2);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Yaşam Evde Sağlık";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -166,6 +168,7 @@ namespace DEnEme
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }
 

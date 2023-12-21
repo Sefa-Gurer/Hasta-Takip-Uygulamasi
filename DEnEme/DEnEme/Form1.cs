@@ -25,28 +25,46 @@ namespace DEnEme
 
         private void button1_Click(object sender, EventArgs e)
         {
-            veri_tabani.Open();
-            
-            int girilen_id= Convert.ToInt32(kullanici_adi.Text);
-            string girilen_sifre = (sifre.Text);
-
-            SqlCommand gercek_sifre = new SqlCommand("Select Sisteme_Giris_Bilgileri.Sifre from Sisteme_Giris_Bilgileri Where Personel=@prmPersonel", veri_tabani);
-            gercek_sifre.Parameters.AddWithValue("@prmPersonel", girilen_id);
-            var sonuc = gercek_sifre.ExecuteScalar();
-
-            // Eğer sonuç null değilse ve girilen_sifre ile eşleşiyorsa
-            if (sonuc != null && girilen_sifre == sonuc.ToString())
+            if (kullanici_adi.Text == "")
             {
-                // Doğru şifre
-                MessageBox.Show("Şifre doğru!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("ID giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Şifre yanlış!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            veri_tabani.Close();
-        }
+                veri_tabani.Open();
+                int girilen_id = Convert.ToInt32(kullanici_adi.Text);
+                string girilen_sifre = (sifre.Text);
 
+                SqlCommand gercek_sifre = new SqlCommand("Select Sisteme_Giris_Bilgileri.Sifre from Sisteme_Giris_Bilgileri Where Personel=@prmPersonel", veri_tabani);
+                gercek_sifre.Parameters.AddWithValue("@prmPersonel", girilen_id);
+                var sonuc = gercek_sifre.ExecuteScalar();
+
+                // Eğer sonuç null değilse ve girilen_sifre ile eşleşiyorsa
+                try
+                {
+                    if (sonuc == null)
+                    {
+                        MessageBox.Show("Kullanıcı Bulunamadı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (girilen_sifre == sonuc.ToString())
+                        {
+                            // Doğru şifre
+                            Form2 ana_ekran = new Form2();
+                            this.Hide();
+                            ana_ekran.ShowDialog();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Şifre yanlış!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                }
+                catch {MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);}
+                veri_tabani.Close();
+            }
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
