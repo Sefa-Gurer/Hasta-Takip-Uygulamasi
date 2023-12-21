@@ -22,7 +22,6 @@ namespace DEnEme
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (kullanici_adi.Text == "")
@@ -51,7 +50,7 @@ namespace DEnEme
                         if (girilen_sifre == sonuc.ToString())
                         {
                             // Doğru şifre
-                            Form2 ana_ekran = new Form2();
+                            Form2 ana_ekran = new Form2(girilen_id);
                             this.Hide();
                             ana_ekran.ShowDialog();
                         }
