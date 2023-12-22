@@ -1,0 +1,3 @@
+buton 1 sol üst == hasta ekleme
+buton 2 sağ üst == hasta bilgileri
+buton 3 sol alt == 

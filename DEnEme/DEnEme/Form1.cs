@@ -49,6 +49,12 @@ namespace DEnEme
                     {
                         if (girilen_sifre == sonuc.ToString())
                         {
+                            DateTime tarih = DateTime.Now;
+                            SqlCommand giris_bilgisi = new SqlCommand("INSERT INTO Sisteme_Giris_Zamani (Personel, Giris_Zamani) VALUES (@prmPersonel, @prmTarih)", veri_tabani);
+                            giris_bilgisi.Parameters.AddWithValue("@prmPersonel", girilen_id);
+                            giris_bilgisi.Parameters.AddWithValue("@prmTarih", tarih);
+                            giris_bilgisi.ExecuteNonQuery();
+
                             // Doğru şifre
                             Form2 ana_ekran = new Form2(girilen_id);
                             this.Hide();
@@ -60,7 +66,7 @@ namespace DEnEme
                         }
                     }
                 }
-                catch {MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);}
+                catch { MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); }
                 veri_tabani.Close();
             }
         }

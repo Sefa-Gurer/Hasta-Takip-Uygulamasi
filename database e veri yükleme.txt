@@ -1,0 +1,53 @@
+using System;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+namespace VeriEklemeUygulamasi
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnVeriEkle_Click(object sender, EventArgs e)
+        {
+            // Bağlantı dizesini al
+            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+
+            // SqlConnection nesnesini oluştur
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    // Bağlantıyı aç
+                    connection.Open();
+
+                    // SqlCommand nesnesini oluştur
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = connection;
+
+                        // SQL sorgusunu belirle (örneğin, "INSERT INTO Customers (ColumnName1, ColumnName2) VALUES (@Param1, @Param2)")
+                        cmd.CommandText = "INSERT INTO Customers (ColumnName1, ColumnName2) VALUES (@Param1, @Param2)";
+
+                        // Parametreleri belirle
+                        cmd.Parameters.AddWithValue("@Param1", txtColumnName1.Text);
+                        cmd.Parameters.AddWithValue("@Param2", txtColumnName2.Text);
+
+                        // Sorguyu çalıştır
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Veri başarıyla eklendi.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata: " + ex.Message);
+                }
+            }
+        }
+    }
+}

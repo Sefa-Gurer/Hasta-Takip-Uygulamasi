@@ -31,14 +31,39 @@ namespace DEnEme
             gercek_sifre.Parameters.AddWithValue("@prmPersonel", gelenid);
             var ad = gercek_sifre.ExecuteScalar();
 
-            label1.Text = "Hoş geldin " + ad;
+            SqlCommand punvanıd = new SqlCommand("Select Personeller.Unvan from Personeller Where PersonelID=@prmPersonel", veri_tabani);
+            punvanıd.Parameters.AddWithValue("@prmPersonel", gelenid);
+            var unvanıd = punvanıd.ExecuteScalar();
+
+            SqlCommand ppoliknilikıd = new SqlCommand("Select Personeller.Poliklinik from Personeller Where PersonelID=@prmPersonel", veri_tabani);
+            ppoliknilikıd.Parameters.AddWithValue("@prmPersonel", gelenid);
+            var poliknilikıd = ppoliknilikıd.ExecuteScalar();
+
+            SqlCommand ppoliknilik = new SqlCommand("Select Poliklinikler.Poliklinik_adi from Poliklinikler Where PoliklinikID=@prmPoliklinik", veri_tabani);
+            ppoliknilik.Parameters.AddWithValue("@prmPoliklinik", poliknilikıd);
+            var poliknilik = ppoliknilik.ExecuteScalar();
+
+            SqlCommand punvan = new SqlCommand("Select Unvanlar.Unvan_adi from Unvanlar Where UnvanID=@prmUnvan", veri_tabani);
+            punvan.Parameters.AddWithValue("@prmUnvan", unvanıd);
+            var unvan = punvan.ExecuteScalar();
 
             DateTime tarih = DateTime.Now;
+
+            label1.Text = "Hoş geldin " + ad;
             label2.Text = " " + tarih.DayOfWeek + " "  + tarih;
-           
+
+            label3.Text = " " + unvan;
+            label4.Text = " " + poliknilik + " Polikliniği";
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 hasta_bilgileri= new Form3(gelenid);
+            this.Hide();
+            hasta_bilgileri.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
