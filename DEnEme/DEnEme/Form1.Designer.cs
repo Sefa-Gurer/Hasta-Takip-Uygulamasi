@@ -89,12 +89,14 @@ namespace DEnEme
             // 
             // sifre
             // 
+            this.sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.sifre.Location = new System.Drawing.Point(85, 383);
             this.sifre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sifre.Name = "sifre";
             this.sifre.PasswordChar = '*';
             this.sifre.Size = new System.Drawing.Size(163, 22);
             this.sifre.TabIndex = 2;
+            this.sifre.UseSystemPasswordChar = true;
             // 
             // label1
             // 

@@ -20,3 +20,4 @@ C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\D
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form2.resources
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form3.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form4.resources

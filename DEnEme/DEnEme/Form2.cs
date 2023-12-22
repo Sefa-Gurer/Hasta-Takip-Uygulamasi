@@ -65,7 +65,9 @@ namespace DEnEme
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form4 hasta_ekleme = new Form4(gelenid);
+            this.Hide();
+            hasta_ekleme.ShowDialog();
         }
     }
 }

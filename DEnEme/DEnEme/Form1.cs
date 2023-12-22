@@ -24,23 +24,23 @@ namespace DEnEme
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (kullanici_adi.Text == "")
+            try
             {
-                MessageBox.Show("ID giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                veri_tabani.Open();
-                int girilen_id = Convert.ToInt32(kullanici_adi.Text);
-                string girilen_sifre = (sifre.Text);
-
-                SqlCommand gercek_sifre = new SqlCommand("Select Sisteme_Giris_Bilgileri.Sifre from Sisteme_Giris_Bilgileri Where Personel=@prmPersonel", veri_tabani);
-                gercek_sifre.Parameters.AddWithValue("@prmPersonel", girilen_id);
-                var sonuc = gercek_sifre.ExecuteScalar();
-
-                // Eğer sonuç null değilse ve girilen_sifre ile eşleşiyorsa
-                try
+                if (kullanici_adi.Text == "")
                 {
+                    MessageBox.Show("ID giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    veri_tabani.Open();
+                    int girilen_id = Convert.ToInt32(kullanici_adi.Text);
+                    string girilen_sifre = (sifre.Text);
+
+                    SqlCommand gercek_sifre = new SqlCommand("Select Sisteme_Giris_Bilgileri.Sifre from Sisteme_Giris_Bilgileri Where Personel=@prmPersonel", veri_tabani);
+                    gercek_sifre.Parameters.AddWithValue("@prmPersonel", girilen_id);
+                    var sonuc = gercek_sifre.ExecuteScalar();
+
+                    // Eğer sonuç null değilse ve girilen_sifre ile eşleşiyorsa
                     if (sonuc == null)
                     {
                         MessageBox.Show("Kullanıcı Bulunamadı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -65,10 +65,12 @@ namespace DEnEme
                             MessageBox.Show("Şifre yanlış!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
+
                 }
-                catch { MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-                veri_tabani.Close();
             }
+            catch { MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            veri_tabani.Close();
+
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
