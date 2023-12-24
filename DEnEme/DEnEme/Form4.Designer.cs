@@ -45,11 +45,11 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button27 = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -271,17 +271,6 @@
             this.label1.Text = "T.C. Kimlik";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button27
-            // 
-            this.button27.BackgroundImage = global::DEnEme.Properties.Resources.check;
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button27.Location = new System.Drawing.Point(136, 495);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(127, 76);
-            this.button27.TabIndex = 26;
-            this.button27.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
@@ -293,7 +282,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.button27, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.button2, 1, 6);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1080, 282);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -308,6 +297,18 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(535, 662);
             this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::DEnEme.Properties.Resources.check;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.Location = new System.Drawing.Point(136, 495);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 76);
+            this.button2.TabIndex = 26;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -376,7 +377,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label8;
     }
