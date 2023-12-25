@@ -34,3 +34,6 @@ C:\Users\LENOVO\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\Hasta-Takip-Uygulam
 C:\Users\LENOVO\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.exe
 C:\Users\LENOVO\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form5.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form6.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form7.resources

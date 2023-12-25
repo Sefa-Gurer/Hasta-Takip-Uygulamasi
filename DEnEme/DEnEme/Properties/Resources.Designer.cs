@@ -73,6 +73,16 @@ namespace DEnEme.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap analysis {
+            get {
+                object obj = ResourceManager.GetObject("analysis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap check {
             get {
                 object obj = ResourceManager.GetObject("check", resourceCulture);
@@ -206,6 +216,16 @@ namespace DEnEme.Properties {
         internal static System.Drawing.Bitmap sick_boy {
             get {
                 object obj = ResourceManager.GetObject("sick-boy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_ray {
+            get {
+                object obj = ResourceManager.GetObject("x-ray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -8,6 +8,11 @@
 --	Kan_Grubu VARCHAR(5) NOT NULL CHECK (Kan_Grubu IN ('A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'))
 --)
 
+--ALTER TABLE Hastalar
+--ADD CONSTRAINT CK__Hastalar__Kan_Gr__17F790F9
+--ALTER TABLE Hastalar
+--ADD CONSTRAINT CK_Kan_Grubu CHECK (Kan_Grubu IN ('A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', '0+', '0-'));
+
 --CREATE TABLE Tahlil_Aralikleri(
 --	Sonuc_Tipi nvarchar(50)	NOT NULL PRIMARY KEY,
 --	Sonuc_Max float NOT NULL,
@@ -16,10 +21,18 @@
 
 --tahliller tablosu oluþturma kayboldu
 
-CREATE TABLE Radyolojik_Goruntuler(
-	tc bigint NOT NULL,
-	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('MR', 'RÖNTGEN')),
-	Sonuc nvarchar(100) NOT NULL,
-	Tarih datetime NOT NULL,
-	CONSTRAINT fk_tc2 FOREIGN KEY (tc) REFERENCES Hastalar(Hasta_tc)
-) 
+--CREATE TABLE Radyolojik_Goruntuler(
+--	tc bigint NOT NULL,
+--	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('MR', 'RÖNTGEN')),
+--	Sonuc nvarchar(100) NOT NULL,
+--	Tarih datetime NOT NULL,
+--	CONSTRAINT fk_tc2 FOREIGN KEY (tc) REFERENCES Hastalar(Hasta_tc)
+--) 
+
+--SELECT
+--	name AS ConstraintName,
+--	definition AS CheckDefinition
+--FROM
+--	sys.check_constraints
+--WHERE
+--	parent_object_id = OBJECT_ID('Hastalar') AND definition LIKE '%Kan_Grubu%'

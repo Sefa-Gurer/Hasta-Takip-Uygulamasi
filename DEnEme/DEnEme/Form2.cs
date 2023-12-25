@@ -19,8 +19,9 @@ namespace DEnEme
         int gelenid;
         public Form2(int id)
         {
-            gelenid = id;
             InitializeComponent();
+            gelenid = id;
+            timer1.Start();
         }
         SqlConnection veri_tabani = new SqlConnection(@"Server = SGURER\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
         private void Form2_Load(object sender, EventArgs e)
@@ -47,10 +48,8 @@ namespace DEnEme
             punvan.Parameters.AddWithValue("@prmUnvan", unvanıd);
             var unvan = punvan.ExecuteScalar();
 
-            DateTime tarih = DateTime.Now;
-
             label1.Text = "Hoş geldin " + ad;
-            label2.Text = " " + tarih.DayOfWeek + " "  + tarih;
+            //label2.Text = " " + tarih.DayOfWeek + " "  + tarih;
 
             label3.Text = " " + unvan;
             label4.Text = " " + poliknilik + " Polikliniği";
@@ -62,12 +61,22 @@ namespace DEnEme
             this.Hide();
             hasta_bilgileri.ShowDialog();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Form4 hasta_ekleme = new Form4(gelenid);
             this.Hide();
             hasta_ekleme.ShowDialog();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form5 sonuclar = new Form5(gelenid);
+            this.Hide();
+            sonuclar.ShowDialog();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime tarih = DateTime.Now;
+            label2.Text = " " + tarih.DayOfWeek + " " + tarih;
         }
     }
 }

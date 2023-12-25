@@ -16,7 +16,7 @@ namespace DEnEme
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form4(1));
+            Application.Run(new Form5(3));
         }
     }
 }
