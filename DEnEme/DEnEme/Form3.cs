@@ -78,6 +78,7 @@ namespace DEnEme
         {
             tüm_verileri_listeleme();
             gridAyari();
+            textBox1.Text = "";
         }
         void gridAyari()
         {

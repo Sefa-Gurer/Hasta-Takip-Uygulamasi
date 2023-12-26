@@ -78,5 +78,12 @@ namespace DEnEme
             DateTime tarih = DateTime.Now;
             label2.Text = " " + tarih.DayOfWeek + " " + tarih;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form8 sonuc_ekleme = new Form8(gelenid);
+            this.Hide();
+            sonuc_ekleme.ShowDialog();
+        }
     }
 }

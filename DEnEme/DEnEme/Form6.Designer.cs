@@ -100,7 +100,8 @@
             this.ClientSize = new System.Drawing.Size(1618, 947);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form6";
-            this.Text = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Yaşam Evde Sağlık";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

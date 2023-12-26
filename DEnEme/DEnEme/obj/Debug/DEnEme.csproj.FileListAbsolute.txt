@@ -37,3 +37,5 @@ C:\Users\LENOVO\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\Hasta-Takip-Uygulam
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form5.resources
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form6.resources
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form7.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form8.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form9.resources

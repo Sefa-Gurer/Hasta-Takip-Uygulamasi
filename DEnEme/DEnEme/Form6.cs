@@ -52,7 +52,7 @@ namespace DEnEme
         void tüm_verileri_listeleme()
         {
             // Verileri çekmek için bir SqlDataAdapter kullanın
-            SqlDataAdapter hasta_bilgileri = new SqlDataAdapter("SELECT * FROM Hastalar", veri_tabani);
+            SqlDataAdapter hasta_bilgileri = new SqlDataAdapter("SELECT * FROM Radyolojik_Goruntuler", veri_tabani);
 
             // Verileri içerecek bir DataTable oluşturun
             DataTable dataTable = new DataTable();
