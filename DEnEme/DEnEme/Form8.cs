@@ -37,5 +37,12 @@ namespace DEnEme
             this.Hide(); // Form4'ü gizle
             form9.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10(gelenid);
+            this.Hide(); // Form4'ü gizle
+            form10.Show();
+        }
     }
 }

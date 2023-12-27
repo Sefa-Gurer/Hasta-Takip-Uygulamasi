@@ -24,7 +24,7 @@
 --CREATE TABLE Radyolojik_Goruntuler(
 --	tc bigint NOT NULL,
 --	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('MR', 'RÖNTGEN')),
---	Sonuc nvarchar(100) NOT NULL,
+--	Sonuc image,
 --	Tarih datetime NOT NULL,
 --	CONSTRAINT fk_tc2 FOREIGN KEY (tc) REFERENCES Hastalar(Hasta_tc)
 --) 

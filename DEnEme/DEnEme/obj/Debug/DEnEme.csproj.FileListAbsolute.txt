@@ -39,3 +39,4 @@ C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\D
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form7.resources
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form8.resources
 C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form9.resources
+C:\Users\sefagurer\Desktop\work\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form10.resources

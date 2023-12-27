@@ -36,9 +36,9 @@ namespace DEnEme
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 ana_ekran = new Form2(gelenid);
+            Form8 form8 = new Form8(gelenid);
             this.Hide();
-            ana_ekran.ShowDialog();
+            form8.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
