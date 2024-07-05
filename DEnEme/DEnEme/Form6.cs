@@ -2,177 +2,136 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DEnEme
 {
     public partial class Form6 : Form
     {
-        int id;
-        public Form6(int gelenid)
+        int gelenid;
+        string girilen_sonuc_tipi;
+        public Form6(int id)
         {
-            id = gelenid;
+            gelenid = id;
             InitializeComponent();
         }
         SqlConnection veri_tabani = new SqlConnection(@"Server = DESKTOP-8RQP2FE\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
         private void Form6_Load(object sender, EventArgs e)
         {
-            veri_tabani.Open();
-            try
-            {
-                tüm_verileri_listeleme();
-                gridAyari();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri yükleme hatası: " + ex.Message);
-            }
-            finally
-            {
-                veri_tabani.Close();
-            }
+            comboBox1.Items.Add("DEMİR");
+            comboBox1.Items.Add("GLUKOZ");
+            comboBox1.Items.Add("İNSÜLİN");
+            comboBox1.Items.Add("KOLESTEROL");
+            comboBox1.Items.Add("TSH");
+            comboBox1.Items.Add("ÜRE");
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5(id);
+            Form2 form2 = new Form2(gelenid);
             this.Hide();
-            form5.ShowDialog();
+            form2.ShowDialog();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                DataGridViewCell clickedCell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            //try
+            //{
+                veri_tabani.Open();
+                DateTime tarih = DateTime.Now;
+                string textbox1 = (textBox1.Text.Trim());
+                string girilen_sonuc = (textBox2.Text.Trim());
 
-                if (clickedCell.Value == null || string.IsNullOrEmpty(clickedCell.Value.ToString()))
+                if (comboBox1.SelectedIndex == -1)
                 {
+                    MessageBox.Show("Lütfen sonuç tipi giriniz.");
                 }
                 else
                 {
-                    veri_tabani.Open();
-
-                    string tcValue = dataGridView1.Rows[e.RowIndex].Cells["tc"].Value.ToString();
-                    DateTime tarihValue = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells["Tarih"].Value);
-
-                    using (SqlCommand komut = new SqlCommand("SELECT Sonuc FROM Radyolojik_Goruntuler WHERE tc = @tc AND Tarih = @tarih", veri_tabani))
+                    if (textbox1 == "" || girilen_sonuc == "")
                     {
-                        komut.Parameters.AddWithValue("@tc", tcValue);
-                        komut.Parameters.AddWithValue("@tarih", tarihValue);
-
-                        using (SqlDataReader dr = komut.ExecuteReader())
+                        MessageBox.Show("Doldurulması zorunlu alanlar boş", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (Int64.TryParse(textbox1, out Int64 girilen_tc))
                         {
-                            if (dr.Read())
+                            if (girilen_tc < 99999999999 && girilen_tc > 10000000000)
                             {
-                                if (dr["Sonuc"] != DBNull.Value)
+                                using (SqlCommand cmd = new SqlCommand("INSERT INTO Tahliller(tc, Sonuc_Tipi, Sonuc, Tarih) VALUES(@tc, @sonuc_tipi, @sonuc, @tarih)", veri_tabani))
                                 {
-                                    byte[] resim = (byte[])dr["Sonuc"];
+                                    // Parametreleri ekleyin
+                                    cmd.Parameters.AddWithValue("@tc", girilen_tc);
+                                    cmd.Parameters.AddWithValue("@sonuc_tipi", girilen_sonuc_tipi);
+                                    cmd.Parameters.AddWithValue("@sonuc", girilen_sonuc);
+                                    cmd.Parameters.AddWithValue("@tarih", tarih);
 
-                                    if (resim != null && resim.Length > 0)
+                                    // Sorguyu çalıştırın
+                                    int affectedRows = cmd.ExecuteNonQuery();
+                                    if (affectedRows > 0)
                                     {
-                                        using (MemoryStream memorystream = new MemoryStream(resim))
-                                        {
-                                            pictureBox1.Image = Image.FromStream(memorystream);
-                                        }
+                                        MessageBox.Show("Sonuç başarıyla eklendi.");
+                                        textBox1.Text = string.Empty;
+                                        textBox2.Text = string.Empty;
+                                        comboBox1.SelectedIndex = -1; // ComboBox'ı sıfırla
+                                        label5.Text = "Ortalama değer aralığı";
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Resim verisi boş veya geçersiz format.");
+                                        MessageBox.Show("Sonuç eklenirken bir hata oluştu.");
                                     }
                                 }
-                                else
-                                {
-                                    MessageBox.Show("Resim verisi bulunamadı.");
-                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Geçerli bir T.C. giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
                         }
+                        else
+                        {
+                            MessageBox.Show("Geçerli bir T.C. giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
-                    veri_tabani.Close();
                 }
-            }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Hay Aksi!(Sonucu '.' ile girmeyi deneyin)", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            veri_tabani.Close();
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            try
+            if (comboBox1.Items.Count > 0)
             {
-                Int64 girilen_tc = Convert.ToInt64(textBox1.Text);
-
-                string query = "SELECT Radyolojik_Goruntuler.tc," +
-                               "       Hastalar.Hasta_Ad," +
-                               "       Hastalar.Hasta_Soyad," +
-                               "       Radyolojik_Goruntuler.Sonuc_Tipi," +
-                               "       Radyolojik_Goruntuler.Tarih " +
-                               "FROM Radyolojik_Goruntuler " +
-                               "LEFT JOIN Hastalar ON Radyolojik_Goruntuler.tc = Hastalar.Hasta_tc " +
-                               "WHERE Hastalar.Hasta_tc = @tcKimlik"; // Kişinin TC'sine göre filtreleme
-
-                // SqlCommand ve SqlParameter kullanarak sorguyu çalıştırma
-                using (SqlCommand cmd = new SqlCommand(query, veri_tabani))
+                object selecteditem = comboBox1.SelectedItem;
+                if (selecteditem != null)
                 {
-                    // Parametreyi ekleyin
-                    cmd.Parameters.AddWithValue("@tcKimlik", girilen_tc);
+                    veri_tabani.Open();
+                    string sonuc_tipi = comboBox1.SelectedItem.ToString();
+                    girilen_sonuc_tipi = sonuc_tipi;
 
-                    // Verileri çekmek için bir SqlDataAdapter kullanın
-                    SqlDataAdapter hasta_bilgileri = new SqlDataAdapter(cmd);
+                    SqlCommand sonucmax = new SqlCommand("Select Tahlil_Aralikleri.Sonuc_Max from Tahlil_Aralikleri Where Sonuc_Tipi=@prmsonuctipi", veri_tabani);
+                    sonucmax.Parameters.AddWithValue("@prmsonuctipi", girilen_sonuc_tipi);
+                    var sonuc_max = sonucmax.ExecuteScalar();
 
-                    // Verileri içerecek bir DataTable oluşturun
-                    DataTable dataTable = new DataTable();
+                    SqlCommand sonucmin = new SqlCommand("Select Tahlil_Aralikleri.Sonuc_Min from Tahlil_Aralikleri Where Sonuc_Tipi=@prmsonuctipi", veri_tabani);
+                    sonucmin.Parameters.AddWithValue("@prmsonuctipi", girilen_sonuc_tipi);
+                    var sonuc_min = sonucmin.ExecuteScalar();
 
-                    // DataTable'a verileri doldurun
-                    hasta_bilgileri.Fill(dataTable);
-
-                    // DataGridView'e DataTable'ı bağlayın
-                    dataGridView1.DataSource = dataTable;
-                    gridAyari();
+                    label5.Text = Convert.ToString($"({sonuc_min} - {sonuc_max})");
                 }
             }
-            catch
-            {
-                MessageBox.Show("Geçerli bir değer giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tüm_verileri_listeleme();
-            gridAyari();
-            textBox1.Text = "";
-        }
-        void gridAyari()
-        {
-            dataGridView1.ReadOnly = true; // sadece okunabilir olması yani veri düzenleme kapalı
-            dataGridView1.AllowUserToDeleteRows = false; // satırların silinmesi engelleniyor
-        }
-        void tüm_verileri_listeleme()
-        {
-
-
-
-            string query = "SELECT Radyolojik_Goruntuler.tc," +
-                           "       Hastalar.Hasta_Ad," +
-                           "       Hastalar.Hasta_Soyad," +
-                           "       Radyolojik_Goruntuler.Sonuc_Tipi," +
-                           "       Radyolojik_Goruntuler.Tarih " +
-                           "FROM Radyolojik_Goruntuler " +
-                           "LEFT JOIN Hastalar ON Radyolojik_Goruntuler.tc = Hastalar.Hasta_tc ";
-
-            // Verileri çekmek için bir SqlDataAdapter kullanın
-            SqlDataAdapter hasta_bilgileri = new SqlDataAdapter(query, veri_tabani);
-
-            // Verileri içerecek bir DataTable oluşturun
-            DataTable dataTable = new DataTable();
-
-            // DataTable'a verileri doldurun
-            hasta_bilgileri.Fill(dataTable);
-
-            // DataGridView'e DataTable'ı bağlayın
-            dataGridView1.DataSource = dataTable;
+            veri_tabani.Close();
         }
     }
 }

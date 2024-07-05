@@ -45,15 +45,11 @@ C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\bin\De
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\bin\Debug\DEnEme.pdb
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.AssemblyReference.cache
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form1.resources
-C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form10.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form2.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form3.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form4.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form5.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form6.resources
-C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form7.resources
-C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form8.resources
-C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form9.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Properties.Resources.resources
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.GenerateResource.cache
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache

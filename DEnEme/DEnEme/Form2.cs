@@ -81,7 +81,7 @@ namespace DEnEme
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form8 sonuc_ekleme = new Form8(gelenid);
+            Form6 sonuc_ekleme = new Form6(gelenid);
             this.Hide();
             sonuc_ekleme.ShowDialog();
         }

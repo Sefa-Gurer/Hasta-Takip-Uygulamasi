@@ -102,7 +102,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.01217F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.98783F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel2.Controls.Add(this.label7, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.label6, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.label5, 1, 4);
@@ -216,7 +216,7 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox5.Location = new System.Drawing.Point(461, 295);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(438, 60);
+            this.textBox5.Size = new System.Drawing.Size(437, 60);
             this.textBox5.TabIndex = 4;
             // 
             // textBox4
@@ -225,7 +225,7 @@
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox4.Location = new System.Drawing.Point(461, 222);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(438, 60);
+            this.textBox4.Size = new System.Drawing.Size(437, 60);
             this.textBox4.TabIndex = 3;
             // 
             // textBox3
@@ -234,7 +234,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox3.Location = new System.Drawing.Point(461, 149);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(438, 60);
+            this.textBox3.Size = new System.Drawing.Size(437, 60);
             this.textBox3.TabIndex = 2;
             // 
             // textBox2
@@ -243,7 +243,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.Location = new System.Drawing.Point(461, 76);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(438, 60);
+            this.textBox2.Size = new System.Drawing.Size(437, 60);
             this.textBox2.TabIndex = 1;
             // 
             // textBox1
@@ -252,7 +252,7 @@
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(461, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(438, 60);
+            this.textBox1.Size = new System.Drawing.Size(437, 60);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -274,7 +274,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dateTimePicker1.Location = new System.Drawing.Point(461, 368);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(438, 45);
+            this.dateTimePicker1.Size = new System.Drawing.Size(437, 45);
             this.dateTimePicker1.TabIndex = 28;
             // 
             // comboBox1
@@ -284,7 +284,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(461, 441);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(438, 46);
+            this.comboBox1.Size = new System.Drawing.Size(437, 46);
             this.comboBox1.TabIndex = 29;
             this.comboBox1.Text = "Seçiniz";
             // 
