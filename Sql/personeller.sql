@@ -1,3 +1,13 @@
+--CREATE TABLE Poliklinikler(
+--	PoliklinikID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
+--	Poliklinik_adi varchar(50) NOT NULL
+--)
+
+--CREATE TABLE Unvanlar(
+--	UnvanID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
+--	Unvan_adi varchar(50) NOT NULL
+--)
+
 --CREATE TABLE Personeller(
 --	PersonelID int IDENTITY(1,1) NOT NULL PRIMARY KEY,
 --	Personel_tc bigint NOT NULL UNIQUE CHECK(10000000000<=Personel_tc AND Personel_tc<=99999999999),
@@ -17,11 +27,8 @@
 --	CONSTRAINT fk_Personel FOREIGN KEY (Personel) REFERENCES Personeller(PersonelID)
 --)
 
-CREATE TABLE Sisteme_Giris_Zamani(
-	Personel int NOT NULL,
-	Giris_Zamani DateTime2,
-	CONSTRAINT fk_Giris FOREIGN KEY (Personel) REFERENCES Personeller(PersonelID)
-)
-
-
-
+--CREATE TABLE Sisteme_Giris_Zamani(
+--	Personel int NOT NULL,
+--	Giris_Zamani DateTime2,
+--	CONSTRAINT fk_Giris FOREIGN KEY (Personel) REFERENCES Personeller(PersonelID)
+--)

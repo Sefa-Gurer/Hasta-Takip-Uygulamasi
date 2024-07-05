@@ -20,7 +20,7 @@ namespace DEnEme
             id = gelenid;
             InitializeComponent();
         }
-        SqlConnection veri_tabani = new SqlConnection(@"Server = SGURER\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
+        SqlConnection veri_tabani = new SqlConnection(@"Server = DESKTOP-8RQP2FE\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
         private void Form6_Load(object sender, EventArgs e)
         {
             veri_tabani.Open();

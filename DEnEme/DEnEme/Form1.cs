@@ -17,15 +17,15 @@ namespace DEnEme
         {
             InitializeComponent();
         }
-        SqlConnection veri_tabani = new SqlConnection(@"Server = SGURER\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
+        SqlConnection veri_tabani = new SqlConnection(@"Server = DESKTOP-8RQP2FE\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 if (kullanici_adi.Text == "")
                 {
                     MessageBox.Show("ID giriniz", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -67,8 +67,8 @@ namespace DEnEme
                     }
 
                 }
-            }
-            catch { MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+            //}
+            //catch { MessageBox.Show("Hay Aksi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             veri_tabani.Close();
 
         }

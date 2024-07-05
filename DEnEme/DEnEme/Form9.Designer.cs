@@ -103,7 +103,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.49815F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.50185F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 1);
@@ -130,9 +130,9 @@
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(367, 3);
+            this.textBox1.Location = new System.Drawing.Point(366, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(462, 60);
+            this.textBox1.Size = new System.Drawing.Size(460, 60);
             this.textBox1.TabIndex = 0;
             // 
             // label1
@@ -142,7 +142,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(98, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 82);
+            this.label1.Size = new System.Drawing.Size(262, 82);
             this.label1.TabIndex = 1;
             this.label1.Text = "T.C. Kimlik";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,7 +154,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(98, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(263, 82);
+            this.label2.Size = new System.Drawing.Size(262, 82);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sonuç Tipi";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,9 +164,9 @@
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(367, 85);
+            this.comboBox1.Location = new System.Drawing.Point(366, 85);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(462, 46);
+            this.comboBox1.Size = new System.Drawing.Size(460, 46);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "Seçiniz";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -175,9 +175,9 @@
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(367, 249);
+            this.textBox2.Location = new System.Drawing.Point(366, 249);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(462, 60);
+            this.textBox2.Size = new System.Drawing.Size(460, 60);
             this.textBox2.TabIndex = 5;
             // 
             // label3
@@ -187,7 +187,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(98, 246);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(263, 82);
+            this.label3.Size = new System.Drawing.Size(262, 82);
             this.label3.TabIndex = 6;
             this.label3.Text = "Sonuç";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +197,9 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(367, 164);
+            this.label5.Location = new System.Drawing.Point(366, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(462, 82);
+            this.label5.Size = new System.Drawing.Size(460, 82);
             this.label5.TabIndex = 7;
             this.label5.Text = "(Ortalama değer aralığı)";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;

@@ -23,7 +23,7 @@ namespace DEnEme
             gelenid = id;
             InitializeComponent();
         }
-        SqlConnection veri_tabani = new SqlConnection(@"Server = SGURER\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
+        SqlConnection veri_tabani = new SqlConnection(@"Server = DESKTOP-8RQP2FE\SQLEXPRESS;Database=HastaTakip; Trusted_Connection=True");
         private void Form9_Load(object sender, EventArgs e)
         {
             comboBox1.Items.Add("DEMİR");
@@ -43,8 +43,8 @@ namespace DEnEme
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 veri_tabani.Open();
                 DateTime tarih = DateTime.Now;
                 string textbox1 = (textBox1.Text.Trim());
@@ -101,11 +101,11 @@ namespace DEnEme
                         }
                     }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Hay Aksi!(Sonucu '.' ile girmeyi deneyin)", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Hay Aksi!(Sonucu '.' ile girmeyi deneyin)", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
             veri_tabani.Close();
         }
 
