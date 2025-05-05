@@ -55,3 +55,18 @@ C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\De
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.exe
 C:\Users\SüleymanSefaGürer\Desktop\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\bin\Debug\DEnEme.exe.config
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\bin\Debug\DEnEme.exe
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\bin\Debug\DEnEme.pdb
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.AssemblyReference.cache
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form1.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form2.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form3.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form4.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form5.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Form6.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.Properties.Resources.resources
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.GenerateResource.cache
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.csproj.CoreCompileInputs.cache
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.exe
+C:\Users\SüleymanSefaGürer\Desktop\Utils\Works\Hasta takip projesi\Hasta-Takip-Uygulamasi\DEnEme\DEnEme\obj\Debug\DEnEme.pdb
