@@ -1,4 +1,4 @@
---CREATE TABLE Hastalar(
+ï»¿--CREATE TABLE Hastalar(
 --	Hasta_tc bigint NOT NULL PRIMARY KEY CHECK(10000000000<=Hasta_tc AND Hasta_tc<=99999999999),
 --	Hasta_Ad varchar(50) NOT NULL,
 --	Hasta_Soyad varchar(50) NOT NULL,
@@ -16,8 +16,16 @@
 
 --CREATE TABLE Tahliller(
 --	tc bigint NOT NULL,
---	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('DEMÝR', 'GLUKOZ','ÝNSÜLÝN','KOLESTEROL','TSH','ÜRE')),
+--	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('DEMï¿½R', 'GLUKOZ','ï¿½NSï¿½Lï¿½N','KOLESTEROL','TSH','ï¿½RE')),
 --	Sonuc int,
 --	Tarih datetime NOT NULL,
 --	CONSTRAINT fk_tc FOREIGN KEY (tc) REFERENCES Hastalar(Hasta_tc)
 --)
+
+--CREATE TABLE Radyolojik_Goruntuler(
+--	tc bigint NOT NULL,
+--	Sonuc_Tipi nvarchar(50) NOT NULL CHECK (Sonuc_Tipi IN ('MR', 'Rï¿½NTGEN')),
+--	Sonuc image,
+--	Tarih datetime NOT NULL,
+--	CONSTRAINT fk_tc2 FOREIGN KEY (tc) REFERENCES Hastalar(Hasta_tc)
+--) 
